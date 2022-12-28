@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+        *{
+            font-family:Arial;
+        }
+        body{
+            background-color: rgb(26, 35, 44);
+        }
+        .main
+        {
+            width: 600px;
+            height: 560px;
+            background-color: black;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 15px;
+            flex-direction: column;
+            
+        }
+        .section1{
+            display: flex;
+            padding: 0px 16px;
+            align-items: center;
+            height: 52px;
+            
+        }
+        .section2{
+            color: white;
+            position: relative;
+           
+        }
+        .close{
+            height: 26px;
+            
+        }
+        .bird{
+            height: 30px;
+            
+        }
+      
+        
+        .closediv,.birddiv{
+            flex:1;
+            padding-top: 10px;
+           
+        }
+        .signIn{
+            font-size: 2em;
+            font-weight: bold;
+            margin: 20px 0px 20px;
+        }
+        .insection2div{
+            display: flex;
+            flex-direction: column;
+            margin-left: 110px;
+            margin-right: 110px;
+            padding-left: 40px;
+            padding-right: 50px;
+           position: absolute;
+           right: 0;
+           left: 0;
+            
+        }
+        .prettybar{
+            width: 100%;
+    height: .06px;
+    
+    background-color: hsl(0, 2%, 17%);
+   margin: 0px 10px;
+    align-self: center;
+}
+        .prettybardiv{
+            display: flex;
+            margin: 1px 0px;
+        }
+        .googleimg,.appleimg{
+            height: 24px;
+        }
+        .gbtn,.apbtn,.nextbtn,.forgotbtn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 42px;
+            border-radius: 21px;
+            background-color: white;
+            font-family: Arial;
+            font-weight: 400;
+            margin: 10px 0px;
+            font-weight: bold;
+           column-gap: 5px;
+        }
+        .gbtn{
+            color: rgb(40, 40, 40);
+            font-weight: normal;
+            font-family: Roboto;
+            font-weight: 400px;
+        }
+        .forgotbtn{
+            color: white;
+            background: #000;
+            border-width: 1px;
+            border-color: rgb(73, 72, 72);
+            border-style: solid;
+        }
+        .text{
+            border-radius: 4px;
+            padding: 20px 0px 20px 8px;
+            border-width: 1px;
+            background-color:rgb(0,0,0);
+            border-style: solid;
+            border-color: rgb(83, 83, 83);
+            margin: 12px 0px;
+        }
+        ::placeholder{
+            font-size: 1rem;
+        }
+        .signuptext{
+            color: grey;
+            margin-top: 30px;
+            font-size: .90rem;
+        }
+    </style>
+</head>
+<body>
+<main class="main">
+    <section class="section1">
+        <div class="closediv">
+        <img class="close" src="close.svg" alt="">
+        </div>
+        <img class="bird" src="twitter-svg.svg" alt="">
+        <div class="birddiv">
+        
+         </div>
+    </section>
+    <section class="section2">
+<!-- section2start -->
+        <div class="insection2div">
+        <div class="signIn">Sign in to Twitter</div>
+        <button class="gbtn"><img class="googleimg" src="googlesvg.svg" alt="">Sign in with google</button>
+        <button class="apbtn"><img class="appleimg" src="applesvg.svg" alt="">Sign in with Apple</button>
+        <div class="prettybardiv">
+            <div class="prettybar"></div>or <div class="prettybar"></div>
+        </div>
+        <input class="text" type="text" placeholder="Phone,email,or username">
+        <button class="nextbtn">  Next</button>
+        <button class="forgotbtn">Forgot password?</button>
+        <div class="signuptext">Don't have an account? <span style="color: rgb(37, 115, 250);">Sign up</span></div>
+    </div>
+    <!-- section2end -->
+    </section>
+</main>
+</body>
+</html>
